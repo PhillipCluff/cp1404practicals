@@ -1,0 +1,10 @@
+17, 10, 17, 12, 15
+5, 3, 5, 5, 7, 5
+4.06967540037129, 3.104875542339114, 5.425050820787459, 3.143908424403592, 2.736053239562723
+
+On line one the smallest would be 5 and the largest would be 20
+
+On line two the smallest would be 3 and the largest would be 9, no
+it could not make a 4
+
+On line two the smallest would be 2.5 and largest would be 5.499999999999999 depending on rounding?
