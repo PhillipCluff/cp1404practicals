@@ -37,5 +37,7 @@ almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 numbers = [int(almost_number) for almost_number in almost_numbers]
 print(numbers)
 
-# TODO: use a list comprehension to create a list of only the numbers that are
+#  use a list comprehension to create a list of only the numbers that are
 # greater than 9 from the numbers (not strings) you just created
+numbers_greater_than_nine = [number for number in numbers if number >= 9]
+print(numbers_greater_than_nine)
