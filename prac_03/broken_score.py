@@ -5,11 +5,11 @@ score checking program with function
 
 def main():
     score = float(input("Enter score: "))
-    result = score_checker(score)
+    result = get_result(score)
     print(result)
 
 
-def score_checker(score):
+def get_result(score):
 
     if score > 100 or score < 0:
         return "Invalid score"
