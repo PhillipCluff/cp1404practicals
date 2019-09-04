@@ -12,6 +12,8 @@ def main():
             print("{:>2} ".format(i), end='')
         print()
 
+# TODO make this work doesn't
+
 
 def make_a_quick_pick():
     quick_picks = []
@@ -20,6 +22,7 @@ def make_a_quick_pick():
         pick = random.randint(1, 45)
         if pick not in quick_picks:
             quick_picks.append(pick)
+
 
     quick_picks.sort()
     return quick_picks
