@@ -9,7 +9,10 @@ for word in words:
         number = words_dict[word]
         number += 1
         words_dict[word] = number
-for word in words_dict:
-    print("{}:{}".format(word, words_dict[word]))
 
-# add to words_dict check if in dict dict[key] = value
+words = list(words_dict.keys())
+words.sort()
+
+length_of_longest_word = max((len(word) for word in words))
+for word in words:
+    print("{:{}} : {}".format(word, length_of_longest_word, words_dict[word]))
