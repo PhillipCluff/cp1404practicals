@@ -7,20 +7,20 @@ def main():
     for number_of_quick_picks in range(number_of_quick_picks):
         one_quick_pick = make_a_quick_pick()
         all_quick_picks.append(one_quick_pick)
-    for all_quick_pick in all_quick_pick in all_quick_picks
-        print(all_quick_pick[0])
-# TODO enumirate through list thing
+    for quick_pick in all_quick_picks:
+        for i in quick_pick:
+            print("{:>2} ".format(i), end='')
+        print()
 
 
 def make_a_quick_pick():
     quick_picks = []
-    repeats = []
+
     for pick in range(6):
         pick = random.randint(1, 45)
-        if pick in quick_picks:
-            repeats.append(pick)
-        else:
+        if pick not in quick_picks:
             quick_picks.append(pick)
+
     quick_picks.sort()
     return quick_picks
 
