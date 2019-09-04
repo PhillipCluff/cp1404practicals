@@ -14,6 +14,8 @@ def main():
         incomes.append(income)
     make_report(number_of_months, incomes)
 
+# TODO why we dont need number_of_months
+
 
 def make_report(number_of_months, incomes):
     print("\nIncome Report\n-------------")
