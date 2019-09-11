@@ -2,7 +2,6 @@ HEX_COLOURS = {"aquamarine1": "#7fffd4", "blue1": "	#0000ff", "chartreuse1": "#7
                "brown1": "#ff4040", "cyan1": "#00ffff", "DarkGoldenrod1": "#ffb90f", "DarkOliveGreen1": "#caff70",
                "DarkOrange": "#ff8c00", "DarkOrchid1": "#bf3eff"}
 
-
 colour = input("Enter colour: ")
 while colour != "":
     if colour in HEX_COLOURS:
