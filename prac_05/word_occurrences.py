@@ -6,9 +6,9 @@ for word in words:
     if word not in words_dict.keys():
         words_dict[word] = 1
     else:
-        number = words_dict[word]
-        number += 1
-        words_dict[word] = number
+        count = words_dict[word]
+        count += 1
+        words_dict[word] = count
 
 words = list(words_dict.keys())
 words.sort()
