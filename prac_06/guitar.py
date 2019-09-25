@@ -22,4 +22,7 @@ class Guitar:
         return self.get_age() >= VINTAGE_AGE
 
     def __lt__(self, other):
+        # it a returns so put stuff in here
+        # self.cost < other.cost
         return self.year < other.year
+

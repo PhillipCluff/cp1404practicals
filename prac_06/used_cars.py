@@ -13,6 +13,7 @@ def main():
     print(my_car)
 
     print("Car {}, {}".format(my_car.fuel, my_car.odometer))
+    # next can be a put im a loop that runs though the list
     print("Car {self.fuel}, {self.odometer}".format(self=my_car))
 
     limo = Car("limo", 100)
