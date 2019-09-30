@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: value_text
+            on_text: app.handle_calculate(self.text)
+
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                id: up_button
+                text: 'Up'
+                on_press: app.handle_increment(value_text.text, 1)
+
+            Button:
+                id: down_button
+                text: 'Down'
+                on_press: app.handle_increment(value_text.text, -1)
+
+    Button:
+        id: m_to_k_button
+        text: 'Covert miles to kilometres'
+        on_press: app.handle_calculate(float(value_text.text))
+
+    Label:
+        id: output
+        text: app.output
