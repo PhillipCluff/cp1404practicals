@@ -7,9 +7,16 @@ import os
 def get_fixed_filename(filename):
     """Return a 'fixed' version of filename."""
     new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
-    for i, char in  enumerate(new_name):
+    things = []
+    for i, char in enumerate(new_name):
         if char.isupper() and i > 0:
-            print("{}".format(i, char))
+            print("{} : {}".format(i, char))
+            things.append(i)
+    for thing in things:
+        split_words = new_name.split(thing)
+        for word in split_words:
+            new_name = "".join(word, "_")
+
     return new_name
 
 
