@@ -32,7 +32,6 @@ import os
 #         new_name = get_fixed_filename(filename)
 #         print("Renaming {} to {}".format(filename, new_name))
 #
-#         # TODO: Try these options one at a time
 #         # Option 1: rename file to new name - in place
 #         # os.rename(filename, new_name)
 #
@@ -43,6 +42,10 @@ import os
 def get_fixed_filename(filename):
     """Return a 'fixed' version of filename."""
     new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
+    for i, char in  enumerate(new_name):
+        if char.islower() and char + 1.isupper():
+            add "_" before
+        print("{} : {}".format(i, char))
     return new_name
 
 
